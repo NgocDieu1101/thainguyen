@@ -123,5 +123,46 @@ p {
 
 
 
+.owl-nav{
+  position: absolute;
+  top: -35px;
+  right: 10px;
+}
 
+ #chuyenmuc .owl-next i,
+ #chuyenmuc .owl-prev i{
+  font-size: 10px !important;
+  font-weight: bold;
+  color:#ccc;
+  padding: 7px 11px; 
+  border: 1px solid #ccc !important;
+  background-color: #fff;
+  border:none;
+  
+}
 
+#chuyenmuc .owl-next{
+  margin-left: 10px;
+}
+
+#chuyenmuc .hidden {
+  display:none !important;
+}
+#chuyenmuc .show {
+  display:block !important;
+  transition: all 0.3s ease-in-out;
+}
+
+#chuyenmuc .active-tab a{
+  color: red !important;
+  font-weight: bold !important;
+}
+
+#chuyenmuc .trongTinh,
+#chuyenmuc .quocTe{
+  display:none;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  top:0;
+  left:0;
+}
