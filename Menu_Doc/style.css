@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: UTM Netsite;
+}
+.navbar {
+    width: 300px;
+}
+.navbar-list {
+    width: 100%;
+    list-style: none;
+    background: rgba(0, 0, 0, 0) linear-gradient(#e70000 27%, #ff0000 68%) repeat local 0 8px;
+}
+.navbar-item a, .navbar-item-child a {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    align-self: center;
+    text-transform: uppercase;
+    padding: 10px 5px 10px 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff !important;
+    cursor: pointer; 
+}
+.navbar-item > a:hover {
+    border-left: 5px solid #fff000;
+}
+/* .navbar-item:has(.navbar-item-child:hover) > a {
+    border-left: 5px solid #fff000;
+} */
+.navbar-item-child > a:hover {
+    background-color: #ca0606;;
+    border-left: 5px solid #fff000;
+}
+.navbar-item > a {
+    padding: 10px 5px 10px 10px;
+    border-left: 5px solid #e70000;
+}
+.navbar-item-child a {
+    padding: 10px 5px 10px 25px;
+    border-left: 5px solid #ba0404;
+}
+.navbar-list-child {
+    list-style: none;
+    display: none;
+    background-color: #ba0404;
+    transition: all 1s;
+}
+.button-down {
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+.button-down:hover {
+    background-color: #c50000;
+}

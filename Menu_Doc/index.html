@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu_Dọc</title>
+    <!-- <link rel="stylesheet" href="/Dieu/ace_v4/dist/css/rtl/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/Dieu/ace_v4/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/Dieu/ace_v4/node_modules/fortawesome/fontawesome-free/css/fontawesome.css">
+    <link rel="stylesheet" href="/Dieu/ace_v4/node_modules/fortawesome/fontawesome-free/css/brands.css">
+    <link rel="stylesheet" href="/Dieu/ace_v4/node_modules/fortawesome/fontawesome-free/css/regular.css">
+    <link rel="stylesheet" href="/Dieu/ace_v4/node_modules/fortawesome/fontawesome-free/css/solid.css">
+    <link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+    <div>
+        <div class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a>
+                        CÔNG TÁC TUYÊN GIÁO
+                        <span class="button-down">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul class="navbar-list-child">
+                        <li class="navbar-item-child">
+                            <a>TIN HOẠT ĐỘNG</a>
+                        </li>
+                        <li class="navbar-item-child">
+                            <a>NGHIÊN CỨU - TRAO ĐỔI</a>
+                        </li>
+                        <li class="navbar-item-child">
+                            <a>ĐƯA NGHỊ QUYẾT CỦA ĐẢNG VÀO CUỘC SÔNG</a>
+                        </li>
+                        <li class="navbar-item-child">
+                            <a>BẢO VỆ NỀN TẢNG TƯ TƯỞNG CỦA ĐẢNG</a>
+                        </li>
+                        <li class="navbar-item-child">
+                            <a>HỌC TẬP VÀ LÀM THEO TƯ TƯỞNG, ĐẠO ĐỨC, PHONG CÁCH HỒ CHÍ MINH</a>
+                        </li>
+                        <li class="navbar-item-child">
+                            <a>KỈ NIỆM 75 NĂM NGÀY BÁC HỒ VỀ ATK ĐỊNH HÓA</a>
+                        </li>
+                        <li class="navbar-item-child">
+                            <a>KỈ NIỆM NGÀY TRUYỀN THỐNG NGÀNH TUYÊN GIÁO CỦA ĐẢNG</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar-item" >
+                    <a>
+                        CÔNG TÁC TỔ CHỨC
+                        <span class="button-down">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul class="navbar-list-child">
+                        <li class="navbar-item-child">
+                            <a>TIN HOẠT ĐỘNG</a>
+                        </li>
+                        <li class="navbar-item-child">
+                            <a>NGHIÊN CỨU - TRAO ĐỔI</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar-item" >
+                    <a>
+                        CÔNG TÁC KIỂM TRA
+                        <span class="button-down">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul class="navbar-list-child">
+                        <li class="navbar-item-child">
+                            <a>TIN HOẠT ĐỘNG</a>
+                        </li>
+                        <li class="navbar-item-child">
+                            <a>NGHIÊN CỨU - TRAO ĐỔI</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar-item" >
+                    <a>
+                        CÔNG TÁC DÂN VẬN
+                        <span class="button-down">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul class="navbar-list-child">
+                        <li class="navbar-item-child">
+                            <a>TIN HOẠT ĐỘNG</a>
+                        </li>
+                        <li class="navbar-item-child">
+                            <a>NGHIÊN CỨU - TRAO ĐỔI</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar-item" >
+                    <a>
+                        CÔNG TÁC NỘI CHÍNH
+                        <span class="button-down">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul class="navbar-list-child">
+                        <li class="navbar-item-child">
+                            <a>TIN HOẠT ĐỘNG</a>
+                        </li>
+                        <li class="navbar-item-child">
+                            <a>NGHIÊN CỨU - TRAO ĐỔI</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a>
+                        CÔNG TÁC VĂN PHÒNG
+                        <span class="button-down">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul class="navbar-list-child">
+                        <li class="navbar-item-child">
+                            <a>TIN HOẠT ĐỘNG</a>
+                        </li>
+                        <li class="navbar-item-child">
+                            <a>NGHIÊN CỨU -TRAO ĐỔI</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var listItem = document.querySelectorAll(".navbar-item");
+        var listChildItem = document.querySelectorAll(".navbar-list-child");
+        const openListChild = (i) => {
+            if( listChildItem[i].style.display!=='block' ) {
+                listChildItem[i].style.display='block';
+            } else {
+                listChildItem[i].style.display='none';
+            }
+        }
+
+        listItem.forEach((item, index) => {
+            const downButton = listItem[index].querySelector(".button-down");
+            if(downButton) {
+                downButton.addEventListener("click",() => openListChild(index));
+            }     
+        })
+    </script>
+    <script type="text/javascript" src="/Dieu/ace_v4/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script  type="text/javascript" src="/Dieu/ace_v4/node_modules/jquery/dist/jquery.js"></script>
+    <script  type="text/javascript" src="/Dieu/ace_v4/node_modules/popperjs/dist/umd/popper.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

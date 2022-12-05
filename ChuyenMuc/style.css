@@ -1,0 +1,127 @@
+/*TIN TRONG NƯỚC/ QUỐC TẾ*/
+
+
+#chuyenmuc .news {
+  border-bottom: #999 0px solid;
+  clear: both;
+}
+
+
+
+#chuyenmuc a.a-color1 {
+  color: black;
+  font-weight: 600;
+  margin-right: 17px;
+}
+
+#chuyenmuc h3.h3-color {
+  font-size: 15px;
+  color: black;
+  font-weight: 500;
+}
+
+p {
+  font-size: 13px;
+}
+
+#chuyenmuc a:hover {
+  text-decoration: none;
+}
+
+
+/*background lá cờ*/
+#chuyenmuc .box-icon-title {
+  margin: 3px 0px 5px 0px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: 100;
+  padding-left: 67px;
+  background: url(https://thainguyen.dcs.vn/themes/netsite_egov/images/codang.png) no-repeat left center;
+  background-size: 5.45%;
+  border-bottom: 2px solid #db0000;
+  font-family: UTM Netsite;
+  letter-spacing: 1px;
+}
+
+#chuyenmuc .news-slide .box-icon-title ul.mtab {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+  .news-slide .box-icon-title ul.mtab li {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+  }
+
+
+
+#chuyenmuc .item-tab {
+  background: #e5e5e5;
+  font-size: 11px;
+}
+
+#chuyenmuc .button {
+    top: 0;
+    position: absolute;
+    right:0;
+    list-style-type: none;
+    list-style: none;
+    display: unset;
+    margin: 17px;
+}
+#chuyenmuc .button .mnav {
+  list-style-type: none;
+  display: flex;
+}
+#chuyenmuc .button .mnav .prev {
+  padding: 2px;
+  width: auto;
+  height: -4px;
+  height: auto;
+  border-radius: 2px;
+  margin: 8px;
+  border: 1px #c4c4c4 solid;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+#chuyenmuc .button .mnav .next {
+  padding: 2px;
+  width: auto;
+  height: -4px;
+  height: auto;
+  border: 1px #c4c4c4 solid;
+  margin: 8px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+#chuyenmuc .button .mnav .prev a,
+#chuyenmuc .button .mnav .next a {
+  color: black;
+}
+
+
+
+
+
+
+/*nút chi tiết*/
+
+#chuyenmuc .backgroup-viewdetail a.a-color {
+  font-size: 12px;
+  display: inline-block;
+  line-height: 12px;
+  padding: 5px 7px;
+  color: #fff;
+  background-color: #c00202;
+  margin-top: 0px;
+  margin-left: 640px;
+}
+
+
+
+
+
