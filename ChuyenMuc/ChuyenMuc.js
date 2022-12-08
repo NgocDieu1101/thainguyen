@@ -22,37 +22,21 @@ $(document).ready(function(){
 //xử lý 2 tab khi nhấn vào thay đổi 
 
 const itemClick = $('.chuyenmuc .mtab li');
-const tab1Item = $('.chuyenmuc .tab1');
-const tab2Item = $('.chuyenmuc .tab2');
-const tab3Item = $('.chuyenmuc .tab3');
+const chuyenMuc = $('.chuyenmuc .tab-content')
 
 itemClick.on('click', (e)=> {
   var eTarget = e.currentTarget;
-  console.log(eTarget);
   if(!$(eTarget).hasClass('active-tab')){
     $(itemClick).removeClass('active-tab')
     $(eTarget).addClass('active-tab');
-    if($(eTarget).hasClass('clicktab1')){
-      $(tab1Item).css("display","block")
-      $(tab2Item).css("display","none")
-    } else {
-      $(tab2Item).css("display","block")
-      $(tab1Item).css("display","none")
-    }
-    if($(eTarget).hasClass('clicktab2')){
-      $(tab2Item).css("display","block")
-      $(tab3Item).css("display","none")
-    } else {
-      $(tab3Item).css("display","block")
-      $(tab2Item).css("display","none")
-    }
-
-
-  } else {
-    $(itemClick).removeClass('active-tab')
-    $(eTarget).addClass('active-tab');
-
-  }
+    let numberActive = $(eTarget).attr('data-value')
+    $(chuyenMuc).css("cssText","display:none !important");
+    $(chuyenMuc).each((e, index) => {
+      if($(index).attr('data-t1b') === numberActive) {
+        $(index).attr('data-t1b', numberActive).css("cssText","display:block !important");
+      }
+    })
+  } 
 })
 });
 
