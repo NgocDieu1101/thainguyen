@@ -1,3 +1,5 @@
+//Chạy hình ảnh và 2 nút icon di chuyển
+
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
     loop:true,
@@ -17,22 +19,35 @@ $(document).ready(function(){
     navText: ['<i class="fas fa-chevron-left"></i>',"<i class='fas fa-chevron-right'></i>"],
 })
 
-const itemClick = $('#chuyenmuc .mtab li');
-const trongTinhItem = $('#chuyenmuc .trongTinh');
-const quocTeItem = $('#chuyenmuc .quocTe');
+//xử lý 2 tab khi nhấn vào thay đổi 
+
+const itemClick = $('.chuyenmuc .mtab li');
+const tab1Item = $('.chuyenmuc .tab1');
+const tab2Item = $('.chuyenmuc .tab2');
+const tab3Item = $('.chuyenmuc .tab3');
+
 itemClick.on('click', (e)=> {
   var eTarget = e.currentTarget;
   console.log(eTarget);
   if(!$(eTarget).hasClass('active-tab')){
     $(itemClick).removeClass('active-tab')
     $(eTarget).addClass('active-tab');
-    if($(eTarget).hasClass('clickTrongTinh')){
-      $(trongTinhItem).css("display","block")
-      $(quocTeItem).css("display","none")
+    if($(eTarget).hasClass('clicktab1')){
+      $(tab1Item).css("display","block")
+      $(tab2Item).css("display","none")
     } else {
-      $(quocTeItem).css("display","block")
-      $(trongTinhItem).css("display","none")
+      $(tab2Item).css("display","block")
+      $(tab1Item).css("display","none")
     }
+    if($(eTarget).hasClass('clicktab2')){
+      $(tab2Item).css("display","block")
+      $(tab3Item).css("display","none")
+    } else {
+      $(tab3Item).css("display","block")
+      $(tab2Item).css("display","none")
+    }
+
+
   } else {
     $(itemClick).removeClass('active-tab')
     $(eTarget).addClass('active-tab');
@@ -42,77 +57,3 @@ itemClick.on('click', (e)=> {
 });
 
 
-// $(function() {
-//     var timerset;
-//     $('.newstabhomejcarousel-items').each(function(k, v) {
-//         var jcarousel = $('.newstabhomejcarousel', $(this));
-//         var jcarouselcontrolnext = $('.mnav .next a', $(this));
-//         var jcarouselcontrolprev = $('.mnav .prev a', $(this));
-//         var jcarouselpagination = $('.jcarousel-pagination', $(this));
-
-//         jcarousel.jcarousel({
-//             wrap: 'circular',
-//         }).jcarouselAutoscroll({
-//             interval: 5000,
-//             target: '+=1',
-//             autostart: false
-//         });
-
-//         jcarouselcontrolprev
-//             .on('jcarouselcontrol:active', function() {
-//                 $(this).removeClass('inactive');
-//             })
-//             .on('jcarouselcontrol:inactive', function() {
-//                 $(this).addClass('inactive');
-//             })
-//             .jcarouselControl({
-//                 target: '-=1'
-//             });
-
-//         jcarouselcontrolnext
-//             .on('jcarouselcontrol:active', function() {
-//                 $(this).removeClass('inactive');
-//             })
-//             .on('jcarouselcontrol:inactive', function() {
-//                 $(this).addClass('inactive');
-//             })
-//             .on('click', function(e) {
-//                 e.preventDefault();
-//             })
-//             .jcarouselControl({
-//                 target: '+=1'
-//             });
-
-//         jcarouselpagination
-//             .on('jcarouselpagination:active', 'a', function() {
-//                 $(this).addClass('active');
-//             })
-//             .on('jcarouselpagination:inactive', 'a', function() {
-//                 $(this).removeClass('active');
-//             })
-//             .on('click', function(e) {
-//                 e.preventDefault();
-//             })
-//             .jcarouselPagination({
-//                 item: function(page) {
-//                     return '<a href="#' + page + '">' + page + '</a>';
-//                 }
-//             });
-//         setTimeout(function() {
-//             var maxH = 0;
-//             $('div.ct', jcarousel).each(function() {
-//                 if (maxH < $(this).height()) {
-//                     maxH = $(this).height();
-//                 }
-//             });
-//             $('div.ct', jcarousel).height(maxH);
-//         }, 100);
-//     });
-//     setTimeout(function() {
-//         $('.newstabhomejcarousel-ctn').hide();
-//         $('.newstabhomejcarousel-ctn:first').show();
-//         $('.newstabhomejcarousel-ctn').css({
-//             'position': 'relative'
-//         });
-//     }, 150);
-// });

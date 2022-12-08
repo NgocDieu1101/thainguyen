@@ -1,3 +1,22 @@
+/* .container{
+  max-width: 1200px !important;
+  width: 1200px !important
+} */
+.tinbai .item {
+
+}
+.tinbai .item a img {
+  height: 160px;
+  object-fit: cover;
+  padding-bottom: 5px;
+}
+
+.tinbai .item a {
+  color: #000;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+}
 
 
 .owl-nav{
@@ -10,7 +29,7 @@
   bottom: 0;
   top:50%;
   transform: translate(0,-50%);
-  left: 20px;
+  left: 5px;
 }
 
 .owl-next{
@@ -18,24 +37,25 @@
   bottom: 0;
   top:50%;
   transform: translate(0,-50%);
-  right: 20px;
+  right: 5px;
 }
 
 
 .owl-next i,
 .owl-prev i{
-  font-size: 20px !important;
+  font-size: 15px !important;
   font-weight: bold;
-  color:#fff;
+  color:darkgray;
   padding: 11px 15px; 
   border: 1px solid #ccc;
   background-color: rgba(39,39,39,0.2);
   border:none;
-  
 }
 .owl-next i:hover,
 .owl-prev i:hover{
-  background-color: rgba(39,39,39,0.8)
+  background-color: orange;
+  transition: 0.1s all ease-in-out;
+  color:#fff;
 }
 
 

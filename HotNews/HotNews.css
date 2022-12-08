@@ -1,0 +1,150 @@
+.tintucnoibat .h1-color {
+  font-size: 20px;
+  color: #000;
+}
+.tintucnoibat .h4-color {
+  font-size: 18px;
+  color: #000 !important;
+}
+.tintucnoibat .img-caption a {
+  color: #000 ;
+}
+.tintucnoibat .list-image .img-caption a:hover {
+  color: rgb(207, 4, 4);
+}
+
+.tintucnoibat .image-tintuc {
+  width: 70% !important;
+}
+
+.tintucnoibat .tinmoi {
+  width: 30% !important;
+}
+
+.tintucnoibat .list-image-tintuc {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tintucnoibat .image-tintuc {
+  padding-top: 25px;
+}
+
+.tintucnoibat .img-caption {
+  padding: 5px;
+  background: rgb(0 0 0 / 9%);
+}
+
+.tintucnoibat .new {
+  border-bottom: 2px #868686 solid;
+}
+
+.tintucnoibat .tinmoi-new ul li {
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #cdcdcd;
+  margin-top: 5px;
+}
+
+.tinmoi-new img {
+    width: 32%;
+    background-color: #fefefe;
+    border: 1px solid #ececec;
+    border-radius: 2px;
+    padding: 3px;
+    margin-right: 8px;
+}
+.tintucnoibat a:hover {
+  text-decoration: none;
+}
+
+.tintucnoibat .item-tinmoi a {
+  display: flex;
+}
+
+.tintucnoibat .item-tinmoi p {
+  display: inline-block;
+  vertical-align: top;
+  color: black;
+  font-size: 13px;
+}
+
+
+
+.tintucnoibat .form {
+  font-size: 12px;
+}
+
+.tintucnoibat   .bithu {
+  margin-left: -47px;
+}
+
+.tintucnoibat .box-icon-titlesss {
+  margin: 3px 0px 5px 5px;
+  padding-top: 8px;
+  line-height: 27px;
+  font-size: 18px;
+  font-weight: 100;
+  padding-left: 50px;
+  background: url(https://thainguyen.dcs.vn/themes/netsite_egov/images/codang.png) no-repeat left center;
+  background-size: 41px;
+  border-bottom: 2px solid #db0000;
+  font-family: UTM Netsite;
+  letter-spacing: 1px;
+}
+
+.tintucnoibat .nv-block-banners {
+  position: relative;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.tintucnoibat .bithu .nv-block-banners img {
+  width: 100%;
+  height: auto;
+}
+
+/*Hai icon chuyển đổi hình ảnh*/
+
+
+.tintucnoibat .image-tintuc .slick-prev {
+  display: block;
+  width: 30px;
+  height: 29px;
+  z-index: 20;
+  position: absolute;
+  top: 33px;
+  bottom: 60%;
+  left: 517px;
+  padding: 3px;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+}
+.tintucnoibat .image-tintuc .slick-next {
+  display: block;
+  width: 30px;
+  height: 29px;
+  z-index: 20;
+  position: absolute;
+  top: 33px;
+  right:3%;
+  padding: 3px 12px;
+  background: rgba(0,0,0,0.5);
+}
+
+
+
+  .tintucnoibat .image-tintuc .slick-prev i,
+  .tintucnoibat .image-tintuc .slick-next i {
+      color: white;
+      font-size: 18px;
+  } 
+  .tintucnoibat .slick-list {
+      width: 660px!important ;
+  }
+
+
+
+
+
+

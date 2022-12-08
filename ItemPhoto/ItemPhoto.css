@@ -1,0 +1,59 @@
+.album {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+.album-item {
+  padding-bottom: 10px;
+
+}
+.album .album-item .list-item-image {
+  background-color: #f5f5f5;
+  border-top: 1px solid #dddddd;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.album .album-image{
+  padding-bottom: 5px;
+  
+}
+.album .text-title{
+ font-weight: 600;
+}
+.album .text-title a {
+  color:black;
+  font-size: 20px;
+  text-decoration: none;
+}
+.album .text-author h4{
+  font-size: 16px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+.album .box-action {
+  padding-bottom: 13px;
+}
+.album .box-action a {
+  color: black;
+  border: 1px solid aliceblue;
+  background: lightblue;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding: 5px;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+
+.album .box-action span {
+  padding-left: 5px;
+}
+.album .box-action a:hover {
+  color: #ffffff;
+  background: skyblue;
+  transition: 0.3s all ease-in-out;
+}
+
+.album .text-muted {
+    font-size: 12px;
+}

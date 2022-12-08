@@ -1,38 +1,38 @@
 /*TIN TRONG NƯỚC/ QUỐC TẾ*/
 
 
-#chuyenmuc .news {
-  border-bottom: #999 0px solid;
+.chuyenmuc .news {
+  border-bottom: .999 0px solid;
   clear: both;
 }
 
 
 
-#chuyenmuc a.a-color1 {
+.chuyenmuc a.a-color1 {
   color: black;
   font-weight: 600;
-  margin-right: 17px;
+  margin-right: 5px;
 }
 
-#chuyenmuc h3.h3-color {
+.chuyenmuc h3.h3-color {
   font-size: 15px;
   color: black;
   font-weight: 500;
 }
 
-p {
+.chuyenmuc p {
   font-size: 13px;
 }
 
-#chuyenmuc a:hover {
+.chuyenmuc a:hover {
   text-decoration: none;
 }
 
 
 /*background lá cờ*/
-#chuyenmuc .box-icon-title {
+.chuyenmuc .box-icon-title {
   margin: 3px 0px 5px 0px;
-  line-height: 40px;
+  line-height: 31px;
   font-size: 18px;
   font-weight: 100;
   padding-left: 67px;
@@ -43,7 +43,7 @@ p {
   letter-spacing: 1px;
 }
 
-#chuyenmuc .news-slide .box-icon-title ul.mtab {
+.chuyenmuc .news-slide .box-icon-title ul.mtab {
   padding: 0;
   margin: 0;
   display: inline-block;
@@ -51,20 +51,19 @@ p {
   text-transform: uppercase;
 }
 
-  .news-slide .box-icon-title ul.mtab li {
+.chuyenmuc .news-slide .box-icon-title ul.mtab li {
       display: inline-block;
       padding: 0;
-      margin: 0;
+      margin: 3px;
   }
 
 
-
-#chuyenmuc .item-tab {
+.chuyenmuc .item-tab {
   background: #e5e5e5;
   font-size: 11px;
 }
 
-#chuyenmuc .button {
+.chuyenmuc .button {
     top: 0;
     position: absolute;
     right:0;
@@ -73,11 +72,11 @@ p {
     display: unset;
     margin: 17px;
 }
-#chuyenmuc .button .mnav {
+.chuyenmuc .button .mnav {
   list-style-type: none;
   display: flex;
 }
-#chuyenmuc .button .mnav .prev {
+.chuyenmuc .button .mnav .prev {
   padding: 2px;
   width: auto;
   height: -4px;
@@ -88,7 +87,7 @@ p {
   padding-right: 8px;
   padding-left: 8px;
 }
-#chuyenmuc .button .mnav .next {
+.chuyenmuc .button .mnav .next {
   padding: 2px;
   width: auto;
   height: -4px;
@@ -98,8 +97,8 @@ p {
   padding-right: 8px;
   padding-left: 8px;
 }
-#chuyenmuc .button .mnav .prev a,
-#chuyenmuc .button .mnav .next a {
+.chuyenmuc .button .mnav .prev a,
+.chuyenmuc .button .mnav .next a {
   color: black;
 }
 
@@ -110,7 +109,7 @@ p {
 
 /*nút chi tiết*/
 
-#chuyenmuc .backgroup-viewdetail a.a-color {
+.chuyenmuc .backgroup-viewdetail a.a-color {
   font-size: 12px;
   display: inline-block;
   line-height: 12px;
@@ -118,19 +117,18 @@ p {
   color: #fff;
   background-color: #c00202;
   margin-top: 0px;
-  margin-left: 640px;
 }
 
 
 
-.owl-nav{
+.chuyenmuc .owl-nav{
   position: absolute;
-  top: -35px;
+  top: -40px;
   right: 10px;
 }
 
- #chuyenmuc .owl-next i,
- #chuyenmuc .owl-prev i{
+ .chuyenmuc .owl-next i,
+ .chuyenmuc .owl-prev i{
   font-size: 10px !important;
   font-weight: bold;
   color:#ccc;
@@ -141,28 +139,137 @@ p {
   
 }
 
-#chuyenmuc .owl-next{
+.chuyenmuc .owl-next{
   margin-left: 10px;
 }
 
-#chuyenmuc .hidden {
+.chuyenmuc .hidden {
   display:none !important;
 }
-#chuyenmuc .show {
+.chuyenmuc .show {
   display:block !important;
   transition: all 0.3s ease-in-out;
 }
 
-#chuyenmuc .active-tab a{
+.chuyenmuc .active-tab a{
   color: red !important;
   font-weight: bold !important;
 }
 
-#chuyenmuc .trongTinh,
-#chuyenmuc .quocTe{
+.chuyenmuc .tab1,
+.chuyenmuc .tab2,
+.chuyenmuc .tab3{
   display:none;
   position: absolute;
   transition: all 0.3s ease-in-out;
   top:0;
   left:0;
 }
+
+.chuyenmuc .clicktab2 {
+  border-left: 1px solid .9e9e9e;
+}
+.chuyenmuc .clicktab2 a {
+  padding-left: 10px;
+}
+
+.chuyenmuc .clicktab3 a {
+  padding-left: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding-top: 30px;
+  }
+
+  @media only screen and (max-width: 769px){
+
+    /* .chuyenmuc .news-slide .box-icon-title ul.mtab .clicktab2,
+    .chuyenmuc .news-slide .box-icon-title ul.mtab .clicktab3{
+      display: none;
+      
+    } */
+    .chuyenmuc .backgroup-viewdetail a.a-color {
+      margin-left: 750px;
+    }
+    .chuyenmuc .box-icon-title {
+      padding-left: 20px;
+      line-height: 1;
+    }
+    .chuyenmuc h3.h3-color {
+      font-size: 24px;
+    }
+    .chuyenmuc p {
+      font-size: 20px;
+    }
+    .text-muted {
+      font-size: 16px;
+    }
+    /* .chuyenmuc .item-tab {
+      padding: 0px;
+    } */
+
+  }
+  @media only screen and (min-width: 768px){
+    .chuyenmuc .backgroup-viewdetail a.a-color {
+      margin-left: 300px;
+    }
+
+     .chuyenmuc .backgroup-viewdetail a.a-color {
+      
+    }
+  }
+  @media only screen and (min-width: 992px ){
+    .chuyenmuc .backgroup-viewdetail a.a-color {
+      margin-left: 420px;
+    }
+
+    .chuyenmuc h3.h3-color {
+      font-size: 22px;
+    }
+    .chuyenmuc p {
+      font-size: 18px;
+    }
+    .text-muted {
+      font-size: 15px;
+    }
+    .chuyenmuc a.a-color1 {
+      font-size: 25px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px){
+    .chuyenmuc .backgroup-viewdetail {
+      margin-bottom: 10px;
+    }
+    .chuyenmuc .backgroup-viewdetail a.a-color {
+      float: right;
+      margin-right: 30px;
+      padding: 8px;
+      padding-right: 10px;
+      padding-left: 10px;
+      font-size: 18px;
+     
+    }
+    .chuyenmuc .item-tab {
+      padding: 15px;
+    }
+    .chuyenmuc .box-icon-title {
+      padding-left: 120px;
+      background-size: 4%;
+    }
+    .chuyenmuc h3.h3-color {
+      font-size: 26px;
+    }
+    .chuyenmuc p {
+      font-size: 21px;
+    }
+    .text-muted {
+      font-size: 20px;
+    }
+    .chuyenmuc a.a-color1 {
+      font-size: 25px;
+    }
+  }

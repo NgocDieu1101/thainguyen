@@ -1,0 +1,102 @@
+.timkiem {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.timkiem .search {
+
+}
+.timkiem .search-nav {
+  font-size: 15px;
+  text-align: center;
+  list-style-type: none;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+  border-bottom: 1px solid #dddddd;
+
+}
+.timkiem .search-nav .kq a {
+  color: #830000;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  line-height: 1.42857143;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  display: block;
+  padding: 2px 5px;
+  border-bottom-color: transparent;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+
+}
+
+.timkiem .search-nav .pull-right a {
+  margin-right: 4px;
+  line-height: 1.42857143;
+  color: #830000;
+
+}
+.timkiem .search-nav .pull-right  {
+  text-align: left;
+}
+
+
+.timkiem .lable {
+  background-color: red;
+  padding-right: 8px;
+  padding-left: 1px;
+  border-radius: 14%;
+  color: white;
+  margin: 15px;
+}
+.h3-color  {
+  font-size: 20px;
+}
+
+.timkiem .keyword {
+  background-color: yellow;
+}
+
+.timkiem .h3-color a {
+  color: #830000;
+  font-size: 14px;
+  text-decoration: none;
+
+}
+.timkiem .p-color{
+  font-size: 14px;
+}
+
+/*Them 1 dòng trống và thiết lập clear:both*/ 
+.row::after {
+content: "";
+clear: both;
+display: table;
+padding-top: 30px;
+}
+@media only screen and (min-width: 768px){
+  .timkiem .search-nav {
+    margin-left: -27px;
+  }
+  .timkiem .search-nav .kq a {
+    background: #f20000;
+    color:white;
+    text-align: left;
+  }
+  .timkiem .search-nav {
+    display: flex;
+  }
+  .timkiem .search-nav .kq {
+
+  }
+  .timkiem .search-nav .pull-right {
+    padding-left: 230px;
+    justify-content: flex-end;
+    padding-top: 10px;
+
+  }
+  
+  }
